@@ -1,0 +1,7 @@
+@use "./utils/variables" as *;
+@import "./components/navigation";
+@import "./components/page-header.scss";
+
+body {
+	color: red;
+}
