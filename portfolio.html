@@ -15,44 +15,62 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<header class="head-container">
-			<div class="mainpagefont">
+		<header class="page-header">
+			<div class="page-header__logo">
 				<span class="sitename">Web</span>Studio
 			</div>
-			<nav>
-				<ul class="site-nav">
-					<li>
-						<a class="link" href="./index.html">Agencja</a>
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="./index.html"
+							>Agencja</a
+						>
 					</li>
-					<li>
-						<a class="link" href="./portfolio.html" target="_blank"
+					<li class="main-nav__item">
+						<a
+							class="main-nav__link"
+							href="./portfolio.html"
+							target="_blank"
 							>Portfolio</a
 						>
 						<div class="is-active"></div>
 					</li>
-					<li><a class="link" href="/">Kontakt</a></li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="/">Kontakt</a>
+					</li>
+				</ul>
+				<ul class="main-nav__contacts">
+					<li class="main-nav__item">
+						<a
+							class="main-nav__email-link"
+							href="mailto:info@devstudio.com"
+							><svg
+								class="envelope-icon"
+								wight="16px"
+								height="12px"
+							>
+								<use
+									href="./images/icons.svg#icon-envelope"
+								></use>
+							</svg>
+							info@devstudio.com</a
+						>
+					</li>
+					<li class="main-nav__item">
+						<a
+							class="main-nav__phonenumber"
+							href="tel:+48111111111"
+						>
+							<svg class="phone-icon" wight="10px" height="16px">
+								<use
+									href="./images/icons.svg#icon-smartphone"
+								></use>
+							</svg>
+							+48111111111</a
+						>
+					</li>
 				</ul>
 			</nav>
-			<ul class="contacts no-points">
-				<li class="header-contact-item">
-					<a class="email-link" href="mailto:info@devstudio.com"
-						><svg class="envelope-icon" wight="16px" height="12px">
-							<use href="./images/icons.svg#icon-envelope"></use>
-						</svg>
-						info@devstudio.com</a
-					>
-				</li>
-				<li class="header-contact-item">
-					<a class="phonenumber" href="tel:+48111111111">
-						<svg class="phone-icon" wight="10px" height="16px">
-							<use
-								href="./images/icons.svg#icon-smartphone"
-							></use>
-						</svg>
-						+48111111111</a
-					>
-				</li>
-			</ul>
 		</header>
 		<main>
 			<div class="container section">
@@ -346,10 +364,10 @@
 				</div>
 			</div>
 		</main>
-		<footer class="foot-container">
-			<div class="footer-blocks">
+		<footer class="page-footer">
+			<div class="page-footer__blocks">
 				<div class="footer-first-block">
-					<div class="footermainpagefont">
+					<div class="page-footer__logo">
 						<span class="sitename">Web</span>Studio
 					</div>
 					<address class="company-address">

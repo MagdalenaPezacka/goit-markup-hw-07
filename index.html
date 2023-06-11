@@ -15,97 +15,119 @@
 		<link rel="stylesheet" href="./css/styles.css" />
 	</head>
 	<body>
-		<header class="head-container">
-			<div class="mainpagefont">
+		<header class="page-header">
+			<div class="page-header__logo">
 				<span class="sitename">Web</span>Studio
 			</div>
-			<nav>
-				<ul class="site-nav">
-					<li>
-						<a class="link" href="./index.html">Agencja</a>
+			<nav class="main-nav">
+				<ul class="main-nav__list">
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="./index.html"
+							>Agencja</a
+						>
 						<div class="is-active"></div>
 					</li>
-					<li>
-						<a class="link" href="./portfolio.html" target="_blank"
+					<li class="main-nav__item">
+						<a
+							class="main-nav__link"
+							href="./portfolio.html"
+							target="_blank"
 							>Portfolio</a
 						>
 					</li>
-					<li><a class="link" href="/">Kontakt</a></li>
+					<li class="main-nav__item">
+						<a class="main-nav__link" href="/">Kontakt</a>
+					</li>
+				</ul>
+				<ul class="main-nav__contacts">
+					<li class="main-nav__item">
+						<a
+							class="main-nav__email-link"
+							href="mailto:info@devstudio.com"
+							><svg
+								class="envelope-icon"
+								wight="16px"
+								height="12px"
+							>
+								<use
+									href="./images/icons.svg#icon-envelope"
+								></use>
+							</svg>
+							info@devstudio.com</a
+						>
+					</li>
+					<li class="main-nav__item">
+						<a
+							class="main-nav__phonenumber"
+							href="tel:+48111111111"
+						>
+							<svg class="phone-icon" wight="10px" height="16px">
+								<use
+									href="./images/icons.svg#icon-smartphone"
+								></use>
+							</svg>
+							+48111111111</a
+						>
+					</li>
 				</ul>
 			</nav>
-			<ul class="contacts">
-				<li class="header-contact-item">
-					<a class="email-link" href="mailto:info@devstudio.com"
-						><svg class="envelope-icon" wight="16px" height="12px">
-							<use href="./images/icons.svg#icon-envelope"></use>
-						</svg>
-						info@devstudio.com</a
-					>
-				</li>
-				<li class="header-contact-item">
-					<a class="phonenumber" href="tel:+48111111111">
-						<svg class="phone-icon" wight="10px" height="16px">
-							<use
-								href="./images/icons.svg#icon-smartphone"
-							></use>
-						</svg>
-						+48111111111</a
-					>
-				</li>
-			</ul>
 		</header>
 		<main>
-			<section class="sitetitle">
-				<div class="sitetitle-shade">
-					<h1 class="title">
+			<section class="mainpage">
+				<div class="mainpage__shade">
+					<h1 class="mainpage__title">
 						EFEKTYWNE ROZWIĄZANIA <br />
 						DLA WASZEGO BIZNESU
 					</h1>
-					<button class="button-main" type="button" data-modal-open>
+					<button
+						class="mainpage__button"
+						type="button"
+						data-modal-open
+					>
 						Zamów usługe
 					</button>
 				</div>
 			</section>
 			<ul class="articles">
-				<li>
-					<svg class="article-box" widht="70px" height="70px">
+				<li class="article__item">
+					<svg class="article__box" widht="70px" height="70px">
 						<use href="./images/icons.svg#icon-antenna-1"></use>
 					</svg>
-					<h3 class="article-title">LOREM IPSUM</h3>
-					<p class="article-text">
+					<h3 class="article__title">LOREM IPSUM</h3>
+					<p class="article__text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Nam vel arcu sem. Sed non sodales dui. Interdum et
 						malesuada
 					</p>
 				</li>
-				<li>
-					<svg class="article-box" widht="70px" height="70px">
+				<li class="article__item">
+					<svg class="article__box" widht="70px" height="70px">
 						<use href="./images/icons.svg#icon-clock-1"></use>
 					</svg>
-					<h3 class="article-title">LOREM IPSUM</h3>
-					<p class="article-text">
+					<h3 class="article__title">LOREM IPSUM</h3>
+					<p class="article__text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Nam vel arcu sem. Sed non sodales dui. Interdum et
 						malesuada
 					</p>
 				</li>
-				<li>
-					<svg class="article-box" widht="70px" height="70px">
+				<li class="article__item">
+					<svg class="article__box" widht="70px" height="70px">
 						<use href="./images/icons.svg#icon-diagram-1"></use>
 					</svg>
-					<h3 class="article-title">LOREM IPSUM</h3>
-					<p class="article-text">
+					<h3 class="article__title">LOREM IPSUM</h3>
+					<p class="article__text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Nam vel arcu sem. Sed non sodales dui. Interdum et
 						malesuada
 					</p>
 				</li>
-				<li>
-					<svg class="article-box" widht="70px" height="70px">
+				<li class="article__item">
+					<svg class="article__box" widht="70px" height="70px">
 						<use href="./images/icons.svg#icon-astronaut-1"></use>
 					</svg>
-					<h3 class="article-title">LOREM IPSUM</h3>
-					<p class="article-text">
+					<h3 class="article__title">LOREM IPSUM</h3>
+					<p class="article__text">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Nam vel arcu sem. Sed non sodales dui. Interdum et
 						malesuada
@@ -404,9 +426,9 @@
 				</section>
 			</div>
 			<div>
-				<section class="section">
-					<h2 class="subtitle">Nasi klienci</h2>
-					<ul class="clients-box">
+				<section class="clients section">
+					<h2 class="clients__subtitle">Nasi klienci</h2>
+					<ul class="clients__box">
 						<li>
 							<svg class="client" width="106px" height="60.04px">
 								<use
@@ -451,10 +473,10 @@
 				</section>
 			</div>
 		</main>
-		<footer class="foot-container">
-			<div class="footer-blocks">
+		<footer class="page-footer">
+			<div class="page-footer__blocks">
 				<div class="footer-first-block">
-					<div class="footermainpagefont">
+					<div class="page-footer__logo">
 						<span class="sitename">Web</span>Studio
 					</div>
 					<address class="company-address">
