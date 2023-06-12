@@ -17,7 +17,9 @@
 	<body>
 		<header class="page-header">
 			<div class="page-header__logo">
-				<span class="sitename">Web</span>Studio
+				<span class="page-header__logo page-header__logo--highlight"
+					>Web</span
+				>Studio
 			</div>
 			<nav class="main-nav">
 				<ul class="main-nav__list">
@@ -45,7 +47,7 @@
 							class="main-nav__email-link"
 							href="mailto:info@devstudio.com"
 							><svg
-								class="envelope-icon"
+								class="main-nav__email-link-icon"
 								wight="16px"
 								height="12px"
 							>
@@ -61,7 +63,11 @@
 							class="main-nav__phonenumber"
 							href="tel:+48111111111"
 						>
-							<svg class="phone-icon" wight="10px" height="16px">
+							<svg
+								class="main-nav__phonenumber-icon"
+								wight="10px"
+								height="16px"
+							>
 								<use
 									href="./images/icons.svg#icon-smartphone"
 								></use>
@@ -74,7 +80,7 @@
 		</header>
 		<main>
 			<div class="container section">
-				<ul class="buttons no-points">
+				<ul class="buttons">
 					<li>
 						<button class="portfolio-button" type="button">
 							Wszystkie
@@ -103,7 +109,7 @@
 				</ul>
 
 				<div>
-					<ul class="no-points all-projects">
+					<ul class="all-projects">
 						<li>
 							<figure class="project">
 								<div class="aboutproject">
@@ -364,30 +370,39 @@
 				</div>
 			</div>
 		</main>
-		<footer class="page-footer">
+		<footer class="page-footer footer-container">
 			<div class="page-footer__blocks">
-				<div class="footer-first-block">
-					<div class="page-footer__logo">
-						<span class="sitename">Web</span>Studio
+				<div class="page-footer footer-contact-block">
+					<div class="page-footer footer-contact-block__logo">
+						<span
+							class="page-footer footer-contact-block__logo--highlight"
+							>Web</span
+						>Studio
 					</div>
-					<address class="company-address">
+					<address class="page-footer footer-contact-block__address">
 						m. Warszawa, Aleje Jerozolimskie 21
 					</address>
 					<a
-						class="footer-email-link"
+						class="page-footer footer-contact-block__link"
 						href="mailto:info@devstudio.com"
 						>info@devstudio.com</a
 					>
-					<a class="footer-phonenumber" href="tel:+48111111111"
+					<a
+						class="page-footer footer-contact-block__phonenumber"
+						href="tel:+48111111111"
 						>+48 111 111 111</a
 					>
 				</div>
-				<div class="footer-second-block">
-					<p class="footer-join-us">Dołącz do nas</p>
-					<div class="footer-socials-box">
-						<div class="footer-social-icons">
+				<div class="page-footer footer-join-us-block">
+					<p class="page-footer footer-join-us-block__subtitle">
+						Dołącz do nas
+					</p>
+					<div class="page-footer footer-join-us-block__social-boxes">
+						<div
+							class="page-footer footer-join-us-block__social-icons"
+						>
 							<svg
-								class="footer-socialmedia"
+								class="footer-join-us-block__socialmedia"
 								width="20px"
 								height="20px"
 							>
@@ -396,9 +411,11 @@
 								></use>
 							</svg>
 						</div>
-						<div class="footer-social-icons">
+						<div
+							class="page-footer footer-join-us-block__social-icons"
+						>
 							<svg
-								class="footer-socialmedia"
+								class="footer-join-us-block__socialmedia"
 								width="20px"
 								height="20px"
 							>
@@ -407,9 +424,11 @@
 								></use>
 							</svg>
 						</div>
-						<div class="footer-social-icons">
+						<div
+							class="page-footer footer-join-us-block__social-icons"
+						>
 							<svg
-								class="footer-socialmedia"
+								class="footer-join-us-block__socialmedia"
 								width="20px"
 								height="20px"
 							>
@@ -418,9 +437,11 @@
 								></use>
 							</svg>
 						</div>
-						<div class="footer-social-icons">
+						<div
+							class="page-footer footer-join-us-block__social-icons"
+						>
 							<svg
-								class="footer-socialmedia"
+								class="footer-join-us-block__socialmedia"
 								width="20px"
 								height="20px"
 							>
@@ -431,8 +452,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="footer-third-block">
-					<p class="footer-newsletter">Zapisz się do newslettera</p>
+				<div class="page-footer footer-newsletter-block">
+					<p class="page-footer footer-newsletter-block__subtitle">
+						Zapisz się do newslettera
+					</p>
 					<form class="newsletter-form">
 						<label for="user-email" class="newsletter-email-box">
 							<input

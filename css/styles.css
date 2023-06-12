@@ -55,7 +55,7 @@ header {
 	color: var(--total-black);
 	background-color: var(--total-white);
 }
-.sitename {
+.page-header__logo--highlight {
 	color: var(--brand-color);
 }
 .main-nav__link {
@@ -77,7 +77,7 @@ header {
 	margin-bottom: 0px;
 	padding-left: 0;
 }
-.main-nav__list .main-nav__link {
+.main-nav__link {
 	display: inline-block;
 	font-weight: 500;
 	font-size: 14px;
@@ -90,9 +90,9 @@ header {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-nav__list .main-nav__link:hover,
-.main-nav__list .main-nav__link:focus,
-.main-nav__list .main-nav__link:active {
+.main-nav__link:hover,
+.main-nav__link:focus,
+.main-nav__link:active {
 	color: var(--brand-color);
 }
 
@@ -113,7 +113,7 @@ header {
 	align-items: center;
 	gap: 30px;
 }
-.envelope-icon {
+.main-nav__email-link-icon {
 	margin-right: 10px;
 	fill: currentColor;
 	cursor: pointer;
@@ -121,8 +121,8 @@ header {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.envelope-icon:hover,
-.envelope-icon:focus {
+.main-nav__email-link-icon:hover,
+.main-nav__email-link-icon:focus {
 	color: var(--brand-color);
 }
 .main-nav__email-link {
@@ -160,7 +160,7 @@ header {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.phone-icon {
+.main-nav__phonenumber-icon {
 	margin-right: 10px;
 	fill: currentColor;
 	cursor: pointer;
@@ -173,8 +173,8 @@ header {
 .main-nav__phonenumber:active {
 	color: var(--brand-color);
 }
-.phone-icon:hover,
-.phone-icon:focus {
+.main-nav__phonenumber-icon:hover,
+.main-nav__phonenumber-icon:focus {
 	color: var(--brand-color);
 }
 /*main*/
@@ -259,7 +259,7 @@ header {
 	color: var(--light-grey);
 }
 
-.whatwedo {
+.whatwedo__list {
 	display: flex;
 	margin: 0 auto;
 	width: 1200px;
@@ -267,13 +267,13 @@ header {
 	gap: 30px;
 	padding-left: 0;
 }
-.wedo {
+.wedo-box {
 	position: relative;
 	margin: 0;
 	top: 0;
 	overflow: hidden;
 }
-.wedo > .label {
+.wedo-box > .wedo-box__text {
 	position: absolute;
 	width: 370px;
 	height: 70px;
@@ -292,8 +292,9 @@ header {
 	margin: 0;
 	padding-top: 27px;
 }
-.subtitle,
-.clients__subtitle {
+.whatwedo__subtitle,
+.clients__subtitle,
+.team__subtitle {
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
@@ -307,12 +308,8 @@ header {
 	width: 1200px;
 	margin: 0 auto;
 }
-.ourteam {
-	margin: 0;
-	padding-bottom: 50px;
-}
 
-.teammembers {
+.team__members {
 	display: flex;
 	margin: 0 auto;
 	width: 1200px;
@@ -320,7 +317,7 @@ header {
 	gap: 30px;
 	padding-left: 0;
 }
-.team .team-part {
+.team-part {
 	background-color: var(--total-white);
 	margin: 0 auto;
 	width: 270px;
@@ -533,26 +530,22 @@ header {
 }
 
 /*footer*/
-footer {
-	display: block;
+
+.footer-container {
 	background-color: var(--dark-grey);
 	width: 1600px;
-	height: 252px;
-	padding: 0;
-}
-.page-footer {
-	width: 1200px;
 	margin: 0 auto;
-	padding-left: 25px;
 }
 .page-footer__blocks {
 	display: flex;
+	margin: 0, auto;
+	justify-content: center;
 }
-.footer-first-block {
+.footer-contact-block {
 	display: inline-block;
 	margin-right: 70px;
 }
-.page-footer__logo {
+.footer-contact-block__logo {
 	font-family: "Raleway";
 	font-weight: 700;
 	font-size: 26px;
@@ -562,14 +555,17 @@ footer {
 	padding-bottom: 20px;
 	margin-right: 70px;
 }
-.company-address {
+.footer-contact-block__logo--highlight {
+	color: var(--brand-color);
+}
+.footer-contact-block__address {
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.71;
 	color: var(--total-white);
 	padding-bottom: 9px;
 }
-.footer-email-link {
+.footer-contact-block__link {
 	display: block;
 	text-decoration: none;
 	font-size: 14px;
@@ -580,7 +576,7 @@ footer {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-phonenumber {
+.footer-contact-block__phonenumber {
 	display: block;
 	text-decoration: none;
 	font-size: 14px;
@@ -591,25 +587,25 @@ footer {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-email-link:hover,
-.footer-email-link:focus,
-.footer-email-link:active {
+.footer-contact-block__link:hover,
+.footer-contact-block__link:focus,
+.footer-contact-block__link:active {
 	color: var(--brand-color);
 }
 
-.footer-phonenumber:hover,
-.footer-phonenumber:focus,
-.footer-phonenumber:active {
+.footer-contact-block__phonenumber:hover,
+.footer-contact-block__phonenumber:focus,
+.footer-contact-block__phonenumber:active {
 	color: var(--brand-color);
 }
-.footer-second-block {
+.footer-join-us-block {
 	display: inline-block;
 	margin-top: 72px;
 	margin-right: 78px;
 	width: 206px;
 	height: 80px;
 }
-.footer-join-us {
+.footer-join-us-block__subtitle {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1.17;
@@ -618,14 +614,14 @@ footer {
 	margin: 0 auto;
 	padding-bottom: 20px;
 }
-.footer-socials-box {
+.footer-join-us-block__social-boxes {
 	display: flex;
 	margin: auto;
 	padding: 0;
 	justify-content: space-around;
 	gap: 10px;
 }
-.footer-social-icons {
+.footer-join-us-block__social-icons {
 	width: 44px;
 	height: 44px;
 	background-color: var(--footer-icon);
@@ -635,25 +631,25 @@ footer {
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-socialmedia {
+.footer-join-us-block__socialmedia {
 	margin: 12px;
 	fill: var(--total-white);
 }
-.footer-social-icons:hover,
-.footer-social-icons:focus {
+.footer-join-us-block__social-icons:hover,
+.footer-join-us-block__social-icons:focus {
 	background-color: var(--brand-color);
 }
-.footer-social-icons:hover > .footer-socialmedia,
-.footer-social-icons:focus > .footer-socialmedia {
+.footer-join-us-block__social-icons:hover > .footer-join-us-block__socialmedia,
+.footer-join-us-block__social-icons:focus > .footer-join-us-block__socialmedia {
 	fill: var(--total-white);
 }
-.footer-third-block {
+.footer-newsletter-block {
 	display: inline-flexbox;
 	margin: 72px 0 94px 0;
 	width: 570px;
 	height: 86px;
 }
-.footer-newsletter {
+.footer-newsletter-block__subtitle {
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1.17;
