@@ -3,5 +3,10 @@
 @import "./components/page-header.scss";
 
 body {
-	color: red;
+	width: 1600px;
+	font-style: normal;
+	color: $almost-black;
+}
+header {
+	width: 1600px;
 }
