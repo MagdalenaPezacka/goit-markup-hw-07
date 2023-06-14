@@ -1,6 +1,21 @@
 @use "./utils/variables" as *;
 @import "./components/navigation";
-@import "./components/page-header.scss";
+@import "./components/page-header";
+@import "./components/mainpage";
+@import "./components/articles";
+@import "./components/whatwedo";
+@import "./components/team";
+@import "./components/clients";
+@import "./components/portfolio-buttons";
+@import "./components/portfolio-container";
+@import "./components/portfolio-projects";
+@import "./components/page-footer";
+@import "./components/page-footer-contact";
+@import "./components/page-footer-join-us";
+@import "./components/page-footer-form";
+@import "./components/modal";
+@import "./components/modal-form";
+@import "./components/global";
 
 body {
 	width: 1600px;
@@ -9,4 +24,9 @@ body {
 }
 header {
 	width: 1600px;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
 }
