@@ -467,7 +467,10 @@
 						Zapisz się do newslettera
 					</p>
 					<form class="newsletter-form">
-						<label for="user-email" class="newsletter-email-box">
+						<label
+							for="user-email"
+							class="newsletter-form__newsletter-email-box"
+						>
 							<input
 								type="email"
 								name="email"
@@ -475,9 +478,16 @@
 								placeholder="E-mail"
 							/>
 						</label>
-						<button class="newsletter-btn" type="submit">
-							Zapisz się
-							<svg widht="24px" height="24px">
+						<button
+							class="newsletter-form newsletter-btn"
+							type="submit"
+						>
+							<span class="newsletter-btn__text">Zapisz się</span>
+							<svg
+								class="newsletter-btn__append"
+								widht="24px"
+								height="24px"
+							>
 								<use
 									href="./images/icons.svg#icon-icon-send"
 								></use>
